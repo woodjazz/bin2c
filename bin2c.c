@@ -204,7 +204,7 @@ int main(int argc, const char** argv) {
         var_name = computed_identifier = file_name_to_identifier(in_file_name);
 
     fprintf(out_file, "/* generated from %s: do not edit */\n"
-                      "const unsigned char %s[] = {\n",
+                      "static const unsigned char %s[] = {\n",
                       in_file_name ? in_file_name : "resource data",
                       var_name     ? var_name     : "resource_data"
     );
